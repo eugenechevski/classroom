@@ -32,8 +32,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/eugene-chevski/Desktop/university-codebase/COP3223C",
-      "program": "/home/eugene-chevski/Desktop/university-codebase/COP3223C/build/Debug/outDebug",
+      "cwd": "/home/eugene-chevski/Desktop/university-codebase/COP3223C/assignments/assign-01",
+      "program": "/home/eugene-chevski/Desktop/university-codebase/COP3223C/assignments/assign-01/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
