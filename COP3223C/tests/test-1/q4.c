@@ -20,5 +20,5 @@ int main()
     }
 
     sum *= 85;
-    printf("%d", n);
+    printf("%d", sum);
 }
