@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-void demonstrateStringFunctions() {
+void demonstrateStringFunctions()
+{
     char str1[] = "Hello";
     char str2[] = "World";
     char concatStr[12];
@@ -42,28 +43,31 @@ void demonstrateStringFunctions() {
         printf("Substring 'World' not found\n");
 }
 
-void readStringInputSeparatedByDelimiter() {
+void readStringInputSeparatedByDelimiter()
+{
     char input[100];
     char delimiter;
-    
+
     // Prompt user to enter string input
     printf("Enter a string input separated by a delimiter: ");
     fgets(input, sizeof(input), stdin);
-    
+
     // Prompt user to enter the delimiter
     printf("Enter the delimiter: ");
     scanf(" %c", &delimiter); // Note the space before %c to consume any whitespace characters left by previous inputs
-    
+
     // Tokenize the input string using strtok()
     char *token = strtok(input, &delimiter);
-    
+
     // Print each token until no more tokens are left
-    while (token != NULL) {
+    while (token != NULL)
+    {
         printf("Token: %s\n", token);
         token = strtok(NULL, &delimiter);
     }
 }
 
-int main() {
+int main()
+{
     return 0;
 }

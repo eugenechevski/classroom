@@ -9,21 +9,24 @@ getline()       Safer           Dynamic, handles resizing   Dynamically allocate
 #include <stdio.h>
 #include <stdlib.h>
 
-void readStringScanf() {
+void readStringScanf()
+{
     char str[100];
     printf("Enter a string (scanf): ");
     scanf("%s", str);
     printf("You entered: %s\n", str);
 }
 
-void readStringFgets() {
+void readStringFgets()
+{
     char str[100];
     printf("Enter a string (fgets): ");
     fgets(str, sizeof(str), stdin);
     printf("You entered: %s\n", str);
 }
 
-void readStringGetline() {
+void readStringGetline()
+{
     char *str = NULL;
     size_t size;
     printf("Enter a string (getline): ");
@@ -32,6 +35,7 @@ void readStringGetline() {
     free(str);
 }
 
-int main() {
+int main()
+{
     return 0;
 }

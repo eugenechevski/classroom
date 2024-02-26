@@ -6,8 +6,10 @@
 // must be declared big enough to handle the larger concatenated string.
 
 #include <stdio.h>
+#include <string.h>
 
-int main() {
+int main()
+{
 
   char first[30], last[30];
   char *wholename;

@@ -12,36 +12,19 @@ int main()
     printf("Enter an odd positive integer:\n");
     scanf("%d", &n);
 
-    while (!(n > 0 && n % 2 != 0))
+    int rate = 1, stars = 1;
+    for (int i = 0; i < n; i++)
     {
-        printf("It's not a valid number, try again.\n");
-        scanf("%d", &n);
-    }
-
-    // Draw the diamond
-    int ROWS = n;
-    int spaces = n / 2, rate = 1;
-
-    for (int row = 0; row <= ROWS; row++)
-    {
-        // Draw spaces
-        for (int col = 0; col < spaces; col++)
-        {
+        // print spaces before
+        for (int j = 0; j < n - stars; j++)
             printf(" ");
-        }
-
-        // Draw stars
-        for (int col = 0; col < ROWS - 2*spaces; col++)
-        {
+        // print stars
+        for (int j = 0; j < 2 * stars - 1; j++)
             printf("*");
-        }
 
-        if (row == ROWS / 2)
-        {
+        if (i == n / 2)
             rate = -1;
-        }
-
-        spaces -= rate;
+        stars += rate;
         printf("\n");
     }
 

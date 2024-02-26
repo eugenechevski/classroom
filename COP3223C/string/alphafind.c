@@ -6,7 +6,8 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
 
   char curname[30], firstname[30];
   int numstuds, i;
@@ -17,8 +18,9 @@ int main() {
   printf("Enter the last names of each student, one per line.\n");
 
   // Loop through each student entered.
-  for (i=0; i<numstuds; i++) {
-  
+  for (i = 0; i < numstuds; i++)
+  {
+
     scanf("%s", curname);
 
     // Update the first name seen.
@@ -33,5 +35,4 @@ int main() {
   printf("The first person in line is %s.\n", firstname);
 
   return 0;
-
 }

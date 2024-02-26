@@ -1,7 +1,7 @@
                      // DRAW a DIAMOND
 #include <stdio.h>
 
-#define TOTAL_ROWS 9
+#define TOTAL_ROWS 5
 int main() {
 
   int row, col, numstars=1;
